@@ -7,11 +7,27 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @laptop {
+       background: #f4f4f4;
+   }
+   @media @tablet {
+       background: darkgrey;
+   }
+   @media @phone {
+       background: lightcyan;
+   }
+
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    h4 {
+        color: @tint;
+    }
+    button {
+        #mainButtons > .button
+    }
 }
 
 .main-content .middle-img {
@@ -22,6 +38,12 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    h4 {
+        color: @tint;
+    }
+    button {
+        #mainButtons > .buttonTransition
+    }
 }
 
 .main-content .bottom-content p {
